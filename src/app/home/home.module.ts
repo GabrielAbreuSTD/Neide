@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { AngularFireAuth } from "angularfire2/auth";
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -18,6 +19,9 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+
+  declarations: [HomePage],
+  providers: [AngularFireAuth]
+
 })
 export class HomePageModule {}

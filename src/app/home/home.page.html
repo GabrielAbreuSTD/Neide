@@ -1,14 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Tela Inicial
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+
+  <ion-input type="text" name="nome" [(ngModel)]="usuario.email">email:</ion-input>
+  <ion-input type="password" name="telefone" [(ngModel)]="usuario.senha">senha:</ion-input>
+  <ion-button (click)="logar()">Acessar</ion-button>
+
+
 </ion-content>

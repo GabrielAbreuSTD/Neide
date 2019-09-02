@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>salvar-usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input type="text" name="email" [(ngModel)]="usuario.email">Email:</ion-input>
+  <ion-input type="text" name="senha" [(ngModel)]="usuario.senha">Senha:</ion-input>
+  <ion-button (click)="salvar()">salvar</ion-button>
+
+  <ion-button href="usuario-listar">listar</ion-button>
+
+
+
+</ion-content>
