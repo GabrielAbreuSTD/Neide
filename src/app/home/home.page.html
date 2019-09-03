@@ -8,10 +8,23 @@
 
 <ion-content>
 
+  <ion-img src="https://steemitimages.com/DQmWG96SKvDEx98pB4T34CB7UqgkZDRawHNaDsoETzLmQ57/1240e483-c8b9-4d0d-8b48-c8c245f2c05e.jpg">
+  </ion-img>
 
-  <ion-input type="text" name="nome" [(ngModel)]="usuario.email">email:</ion-input>
-  <ion-input type="password" name="telefone" [(ngModel)]="usuario.senha">senha:</ion-input>
-  <ion-button (click)="logar()">Acessar</ion-button>
+      <ion-item>
+        <ion-label position="floating">Email:</ion-label>
+        <ion-input type="text" name="nome" [(ngModel)]="usuario.email"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Senha:</ion-label>
+        <ion-input type="password" name="telefone" [(ngModel)]="usuario.senha"></ion-input>
+      </ion-item>
+
+      <ion-button (click)="logar()">Acessar</ion-button>
+
+      <ion-button href = "salvar-usuario">Não possuo cadastro</ion-button>
 
 
 </ion-content>

@@ -19,7 +19,7 @@ export class HomePage {
 
   logar(){
   this.afAuth.auth.signInWithEmailAndPassword(this.usuario.email, this.usuario.senha).then(
-  () => { this.router.navigate(['salvar-usuario']); }
+  () => { this.router.navigate(['salvar-musica']); }
   ).catch( (erro) => console.log(erro) );
   }
 
