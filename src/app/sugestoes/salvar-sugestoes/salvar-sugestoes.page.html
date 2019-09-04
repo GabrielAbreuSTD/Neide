@@ -6,13 +6,10 @@
 
 <ion-content>
 
+  <ion-item>
+    <ion-input type="text" name="sugestoes" [(ngModel)]="sugestoes.nome">Sugestao:</ion-input>
+  </ion-item>
 
-
-<ion-input[(ngModel)]="sugestoes.nome">Sugestao:</ion-input>
-
-
-<ion-button (click)="salvar()">salvar sugestao</ion-button>
-
-
+  <ion-button (click)="salvar()">salvar sugestao</ion-button>
 
 </ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>salvar-genero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input type="text" name="nome" [(ngModel)]="genero.nome">Digite o gênero da musica: </ion-input>
+  <ion-button (click)="salvar()">salvar</ion-button>
+
+
+  <ion-button href="salvar-sugestoes">sugestoes</ion-button>
+
+  <ion-button href="salvar">musica</ion-button>
+
+</ion-content>

@@ -9,6 +9,8 @@
     <ion-item *ngFor="let usuario of listaUsuarios | async">
       <ion-label>{{ usuario.email }}</ion-label>
       <ion-label>{{ usuario.senha }}</ion-label>
+
+       <ion-button (click)="excluir(usuario.key)"><ion-icon name="close-circle"></ion-icon></ion-button>
     </ion-item>
   </ion-list>
 </ion-content>

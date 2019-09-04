@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SalvarMusicaPage } from './salvar-musica.page';
+import { SalvarGeneroPage } from './salvar-genero.page';
 
-describe('SalvarMusicaPage', () => {
-  let component: SalvarMusicaPage;
-  let fixture: ComponentFixture<SalvarMusicaPage>;
+describe('SalvarGeneroPage', () => {
+  let component: SalvarGeneroPage;
+  let fixture: ComponentFixture<SalvarGeneroPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SalvarMusicaPage ],
+      declarations: [ SalvarGeneroPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SalvarMusicaPage);
+    fixture = TestBed.createComponent(SalvarGeneroPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Minhas Musicas - Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input name="nome" [(ngModel)]="musica.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Genero</ion-label>
+    <ion-select [(ngModel)]="musica.genero">
+      <ion-select-option *ngFor='let genero of listaGenero | async' [value]="genero">
+        {{genero.nome}}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="full" shape="round" (click)="salvar()">salvar</ion-button>
+
+
+
+</ion-content>

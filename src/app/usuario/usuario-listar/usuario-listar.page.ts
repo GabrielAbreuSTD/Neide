@@ -25,4 +25,7 @@ this.listaUsuarios = this.fire.list<Usuario>('usuario').snapshotChanges().pipe(
 
 ngOnInit() {}
 
+excluir(key){
+    this.fire.list<Usuario>('usuario').remove(key);
+  }
 }
