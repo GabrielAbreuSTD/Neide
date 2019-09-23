@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { SugestoesListarPage } from './sugestoes-listar.page';
 
+
+
 const routes: Routes = [
   {
     path: '',

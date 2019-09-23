@@ -6,4 +6,8 @@
 
 <ion-content>
 
+  <ion-list>
+    <ion-item *ngFor="let sugestoes of listaMusica | async">
+      <ion-label>{{ musica.nome }}</ion-label>
+
 </ion-content>

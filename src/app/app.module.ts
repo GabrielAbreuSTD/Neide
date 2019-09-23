@@ -13,10 +13,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { SalvarSugestoesPageModule} from './sugestoes/salvar-sugestoes/salvar-sugestoes.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireDatabaseModule,
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireDatabaseModule, SalvarSugestoesPageModule,
 AngularFireModule.initializeApp({
 
       apiKey: "AIzaSyDgd8oS6pHlXEiXhc05Pt7B0C3mRZvIqnE",

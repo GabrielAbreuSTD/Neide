@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Musica } from '../entidade/musica';
+import { AngularFireDatabase } from '@angular/fire/database'
 
 @Component({
   selector: 'app-listar',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPage implements OnInit {
 
-  constructor() { }
+  constructor(private fire: AngularFireDatabase) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
+excluir(key){
+this.fire.list<Musica>('musica').remove(key);
+}
 
 }
