@@ -7,7 +7,15 @@
 <ion-content>
 
   <ion-list>
-    <ion-item *ngFor="let sugestoes of listaMusica | async">
+    <ion-item *ngFor="let musica of listaMusica | async">
+
       <ion-label>{{ musica.nome }}</ion-label>
+      <ion-button (click)="excluir(musica.key)">
+        <ion-icon name="close-circle"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+  </ion-list>
+
 
 </ion-content>
